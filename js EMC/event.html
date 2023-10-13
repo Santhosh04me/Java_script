@@ -1,8 +1,8 @@
 <h1 id="h1">hello world</h1>
 <button onclick="change()">change</button>
 <br>
-<input type="text" id="num1" value="34">
-<input type="text" id="num2"  value="5"><br>
+<input type="text" id="num1" >
+<input type="text" id="num2" ><br>
 <button onclick="add()">add</button>
 
 <p id="result" >result</p>
@@ -20,16 +20,18 @@
    var num2=document.getElementById("num2")
    var result=document.getElementById("result")
 
-   var value1=Number(num1.value)
-   var value2=Number(num2.value)
-
-
-   var total =value1+value2
+   
    
     console.log(total)
 //    console.log(result)
    
    function add(){
+
+    var value1=Number(num1.value)
+   var value2=Number(num2.value)
+
+
+   var total =value1+value2
     result.textContent=total
    }
    
